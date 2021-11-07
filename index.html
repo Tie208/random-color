@@ -26,7 +26,17 @@
   font-size: 16px;
 }
 </style>
+	  
+<br>
+<br>
+<br>
+	  <h1 id=hex#></h1>
     <script type="text/javascript">
+	    function displayhex() {
+  document.getElementById("hex#").innerHTML = "#" + ("000000" + bg_colour).slice(-6);
+}
+	    
+	  
       var bg_colour = Math.floor(Math.random() * 16777215).toString(16);
       bg_colour = "#" + ("000000" + bg_colour).slice(-6);
       document.bgColor = bg_colour;
